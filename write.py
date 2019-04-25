@@ -13,7 +13,6 @@ def main():
   conn_str = "Driver={Pervasive ODBC Interface};server=localhost;DBQ=demodata"
   db = pyodbc.connect(conn_str)
   c = db.cursor()
-  print(get_cpu_temperature())
   insert_command = """INSERT INTO cpu_data VALUES (0, ?, ?)"""
 
   while True:
