@@ -11,4 +11,4 @@ result = c.execute(query, (five_mins_ago,))
 row = result.fetchone()
 
 if row:
-	print("Average temperature over past 5 minutes: {0}".format(row))
+	print("Average temperature over past 5 minutes: {0}".format(row[0]))
